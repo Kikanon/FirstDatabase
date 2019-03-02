@@ -18,8 +18,7 @@ if($obstaja->num_rows > 0){
 		echo "<h1>Vpisujem...</h1><br>"; //Vpisuje
 		$sql = "UPDATE `users` SET  UserLastVisit =  '".$visit."' WHERE  UserName = '".$username."';"; //Posodobi cas
 		$spydate = $mysqli->query($sql);
-		//sleep(2);
-		//include "profile.php";
+		header('Location: profile.php');
 	}
 	else{
 		echo "<h1>Napacno geslo!</h1><br>";

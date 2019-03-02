@@ -6,6 +6,15 @@
 </head>
 
 <body>
+<?php
+session_start();
+if($_SESSION["usertype"] == "undefined"){
+	$_SESSION["usertype"] == "0";
+}
+if($_SESSION["usertype"] == "1"){
+    include "logedinheader.php";
+}
+?>
 
 <h1>Stran, ki hrani in izpise quote.</h1><hr>
 
