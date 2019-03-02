@@ -7,12 +7,12 @@
 
 <body>
 <?php
-session_start();
-if($_SESSION["usertype"] == "undefined"){      //Mby gonna fix this later coz it doesn t work
-	$_SESSION["usertype"] == "0";
-}
-if($_SESSION["usertype"] == "1"){
+include "runonce.php";
+if($_SESSION["usertype"] > "0"){
     include "logedinheader.php";
+}
+else{
+	echo "Nisi prijavljen";
 }
 ?>
 
