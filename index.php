@@ -8,7 +8,7 @@
 <body>
 <?php
 session_start();
-if($_SESSION["usertype"] == "undefined"){
+if($_SESSION["usertype"] == "undefined"){      //Mby gonna fix this later coz it doesn t work
 	$_SESSION["usertype"] == "0";
 }
 if($_SESSION["usertype"] == "1"){
